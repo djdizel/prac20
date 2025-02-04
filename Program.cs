@@ -9,36 +9,66 @@ namespace prac20
     {
         static void Main(string[] args)
         {
-            Build dom1 = new Build();
-            dom1.name = "Дом 1";
-            dom1.area = 150.5;
-            dom1.kvo = 4;
-            dom1.floor = 2;
+            PersonalComputer pc1 = new PersonalComputer();
+            pc1.Model = "PC1";
+            pc1.CpuFrequency = 3.5;
+            pc1.RamSize = 16;
+            pc1.HddSize = 512;
 
-            Console.WriteLine("Информация о dom1:");
-            dom1.ShowInfo();
+            Console.WriteLine("Информация о pc1:");
+            pc1.Info();
+            Console.WriteLine(pc1.ToString());
             Console.WriteLine();
 
-            Build dom2 = new Build("Дом 2", 200.0, 5, 3);
+            PersonalComputer pc2 = new PersonalComputer("PC2");
+            pc2.CpuFrequency = 2.8;
+            pc2.RamSize = 8;
+            pc2.HddSize = 256;
 
-            Console.WriteLine("Информация о dom2:");
-            dom2.ShowInfo();
+            Console.WriteLine("Информация о pc2:");
+            pc2.Info();
+            Console.WriteLine(pc2.ToString());
             Console.WriteLine();
 
-            Console.WriteLine("Введите параметры для dom3:");
-            Console.Write("Название строения: ");
-            string name = Console.ReadLine();
-            Console.Write("Площадь строения: ");
-            double area = double.Parse(Console.ReadLine());
-            Console.Write("Количество жильцов: ");
-            int kvo = int.Parse(Console.ReadLine());
-            Console.Write("Количество этажей: ");
-            int floor = int.Parse(Console.ReadLine());
+            PersonalComputer pc3 = new PersonalComputer("PC3", 4.0);
+            pc3.RamSize = 32;
+            pc3.HddSize = 1024;
 
-            Build dom3 = new Build(name, area, kvo, floor);
+            Console.WriteLine("Информация о pc3:");
+            pc3.Info();
+            Console.WriteLine(pc3.ToString());
+            Console.WriteLine();
 
-            Console.WriteLine("Информация о dom3:");
-            dom3.ShowInfo();
+            PersonalComputer pc4 = new PersonalComputer("PC4", 3.2, 16);
+            pc4.HddSize = 512;
+
+            Console.WriteLine("Информация о pc4:");
+            pc4.Info();
+            Console.WriteLine(pc4.ToString());
+            Console.WriteLine();
+
+            PersonalComputer pc5 = new PersonalComputer("PC5", 4.5, 64, 2048);
+
+            Console.WriteLine("Информация о pc5:");
+            pc5.Info();
+            Console.WriteLine(pc5.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("Введите данные для нового компьютера:");
+            Console.Write("Модель: ");
+            string model = Console.ReadLine();
+            Console.Write("Тактовая частота процессора (ГГц): ");
+            double cpuFrequency = double.Parse(Console.ReadLine());
+            Console.Write("Объем оперативной памяти (ГБ): ");
+            int ramSize = int.Parse(Console.ReadLine());
+            Console.Write("Объем жесткого диска (ГБ): ");
+            int hddSize = int.Parse(Console.ReadLine());
+
+            PersonalComputer pc6 = new PersonalComputer(model, cpuFrequency, ramSize, hddSize);
+
+            Console.WriteLine("Информация о pc6:");
+            pc6.Info();
+            Console.WriteLine(pc6.ToString());
 
             Console.WriteLine("Нажмите Enter для выхода...");
             Console.ReadLine();

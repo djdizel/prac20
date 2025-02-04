@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="prac20.Build" Collapsed="true">
-    <Position X="8" Y="2.25" Width="1.5" />
+  <Class Name="prac20.PersonalComputer" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAABAAIAAAAAAAEAAAAAAAAAAAACAE=</HashCode>
-      <FileName>Build.cs</FileName>
+      <HashCode>AAAAAAAAAAAAEAAkAAAAAAAAAAAAAAAAAAgAQEAAAAA=</HashCode>
+      <FileName>PersonalComputer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="prac20.Program" Collapsed="true">
-    <Position X="6" Y="2.25" Width="1.5" />
+    <Position X="3.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="System.Object" Collapsed="true">
-    <Position X="6" Y="1" Width="1.5" />
+    <Position X="5.5" Y="0.75" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="9" />
